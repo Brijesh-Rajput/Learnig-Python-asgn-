@@ -1,3 +1,5 @@
+#All Questions are done with using predefined functions
+
 #Q1. Write a python script to convert a number into str type.
 #Ans:-
 x=56;
