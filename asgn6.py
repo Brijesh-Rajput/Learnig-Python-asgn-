@@ -125,11 +125,14 @@ else:
 #ans:-
 ''' 
 jan,mar,may,jul,aug,oct,dec(1,3,5,7,8,10,12) --> 31 days
-                           (2,4,6,9,11) ---> 30 days
+                           (4,6,9,11) ---> 30 days
+                           (2) ---> 28 days Generally BUT in leap year there are 29 days 
 '''
 n=int(input("enter a month number : "));
 if 1<=n<=12:
-    if n<8 and n&1==1 or n>=8 and n&1==0:
+    if n==2:
+        print("Have 28 days");
+    elif n<8 and n&1==1 or n>=8 and n&1==0:
         print("Have 31 days");
     else:
         print("Have 30 days");
