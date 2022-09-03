@@ -78,13 +78,22 @@ a,b,c=int(input("Enter 1st side of triangle : ")),int(input("Enter 2nd side of t
 choice=ord((input("Enter your choice : "))); #unicode of character will store in choice variable
 match choice:
     case 97: #unicode of a
-        pass
+        if a==b or b==c or a==b:
+            print("Isosceles triangle")
+        else:
+            print('Not an Isosceles triangle')
     case 98: #unicode of b
-        pass
+        if a**2+b**2==c**2 or b**2+c**2==a**2 or c**2+a**2==b**2:
+            print("Right angle triangle")
+        else:
+            print("Not a Right angle triangle")
     case 99:
-        pass
+        if a==b==c:
+            print("Equilateral triangle")
+        else:
+            print("Not an Equilateral triangle")
     case 100:
-        pass
+        exit() #it will end the program
     case _:
         print("Invalid Choice")
 print()
